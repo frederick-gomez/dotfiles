@@ -3,6 +3,7 @@ google-chrome/
 Code/
 ibus/
 pulse/
+gh/
 *.list
 *.dirs
 *.locale
