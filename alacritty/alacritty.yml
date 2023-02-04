@@ -1,0 +1,60 @@
+window:
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 10
+    y: 10
+
+selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+  indexed_colors:
+    - { index: 16, color: '0xdc9656' }
+    - { index: 17, color: '0xa16946' }
+    - { index: 18, color: '0x282828' }
+    - { index: 19, color: '0x383838' }
+    - { index: 20, color: '0xb8b8b8' }
+    - { index: 21, color: '0xe8e8e8' }
+
+# Specifying a `duration` of `0` will disable the visual bell.
+bell:
+  animation: EaseOutExpo
+  duration: 0
+  color: '0xffffff'
+
+window_opacity: 0.8
+
+live_config_reload: true
+
+#Keybindigs
+key_bindings:
+  - { key: V, mods: Control, action: Paste }
+  - { key: C, mods: Control, action: Copy }
+
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+  bold:
+    family: JetBrains Mono
+    style: Bold
+  italic:
+    family: JetBrains Mono
+    style: Italic
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+  size: 11.0
+
+cursor:
+  style:
+    shape: Block
+    blinking: Always
+    blink-interval: 750
+
+import:
+  - ~/.config/alacritty/themes/themes/ayu_dark.yaml
