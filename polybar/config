@@ -1,5 +1,5 @@
 [colors]
-bg = #18181B
+bg = #18181B80
 bg-alt = #44475a
 fg = #f8f8f2
 fg-alt = #bd93f9
@@ -50,7 +50,7 @@ modules-right = xwindow alsa pulseaudio memory cpu wlan eth temperature date pow
 
 ;tray-position = right
 ;tray-padding = 2
-;tray-background = ${colors.bg-alt}
+;tray-background = ${colors.black-alt}
 ;tray-maxsize = 10
 
 ;wm-restack = bspwm
@@ -84,10 +84,10 @@ type = internal/xwindow
 format = <label>
 format-prefix = %{T5}%{T-}
 format-prefix-background = ${colors.blue}
-format-prefix-foreground = ${colors.bg}
+format-prefix-foreground = ${colors.black}
 format-prefix-padding = 1
 label = %{T1}%title%%{T-}
-label-background = ${colors.bg}
+label-background = ${colors.black}
 label-foreground = ${colors.fg}
 ;label-maxlen = 30
 label-padding = 1
@@ -134,7 +134,7 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${colors.bg-alt}
+label-focused-background = ${colors.black-alt}
 label-focused-underline= ${colors.blue}
 label-focused-padding = 2
 
@@ -165,10 +165,10 @@ interval = 1
 ;password = 12345
 
 format-online = <icon-prev><icon-stop><toggle><icon-next>
-format-online-background = ${colors.bg}
+format-online-background = ${colors.black}
 format-online-prefix = %{T5}%{T-}
 format-online-prefix-background = ${colors.green}
-format-online-prefix-foreground = ${colors.bg}
+format-online-prefix-foreground = ${colors.black}
 format-online-prefix-padding = 1
 format-stopped = <icon-prev><toggle><icon-next>
 
@@ -215,11 +215,11 @@ format = <label>
 format-prefix = %{T5}%{T-}
 
 format-prefix-background = ${colors.yellow}
-format-prefix-foreground = ${colors.bg}
+format-prefix-foreground = ${colors.black}
 format-prefix-padding = 1
 ; format-underline = ${colors.yellow}
 label = %{T1}%percentage%%%{T-}
-label-background = ${colors.bg}
+label-background = ${colors.black}
 label-foreground = ${colors.fg}
 label-padding = 1
 
@@ -235,11 +235,11 @@ interval = 1
 format = <label>
 format-prefix = %{T5}%{T-}
 format-prefix-background = ${colors.cyan}
-format-prefix-foreground = ${colors.bg}
+format-prefix-foreground = ${colors.black}
 format-underline = ${colors.cyan}
 format-prefix-padding = 1
 label = %{T1}%percentage:2%%%{T-}
-label-background = ${colors.bg}
+label-background = ${colors.black}
 label-foreground = ${colors.fg}
 label-padding = 1
 
@@ -250,11 +250,11 @@ interval = 1
 format = <label>
 format-prefix = %{T5}%{T-}
 format-prefix-background = ${colors.green}
-format-prefix-foreground = ${colors.bg}
+format-prefix-foreground = ${colors.black}
 format-underline = ${colors.green}
 format-prefix-padding = 1
 label = %{T1}%percentage_used%%%{T-}
-label-background = ${colors.bg}
+label-background = ${colors.black}
 label-foreground = ${colors.fg}
 label-padding = 1
 
@@ -266,20 +266,20 @@ interval = 1.0
 format-connected = <label-connected>
 format-connected-prefix = %{T5}%{T-}
 format-connected-prefix-background = ${colors.orange}
-format-connected-prefix-foreground = ${colors.bg}
+format-connected-prefix-foreground = ${colors.black}
 format-connected-prefix-padding = 1
 label-connected = %{T5}%{T-} %{T1}%downspeed%%{T-}
-label-connected-background = ${colors.bg}
+label-connected-background = ${colors.black}
 label-connected-foreground = ${colors.fg}
 label-connected-padding = 1
 
 format-disconnected = <label-disconnected>
 format-disconnected-prefix = %{T5}%{T-}
 format-disconnected-prefix-background = ${colors.red}
-format-disconnected-prefix-foreground = ${colors.bg}
+format-disconnected-prefix-foreground = ${colors.black}
 format-disconnected-prefix-padding = 1
 label-disconnected = %{T5}%{T-}
-label-disconnected-background = ${colors.bg}
+label-disconnected-background = ${colors.black}
 label-disconnected-foreground = ${colors.red}
 label-disconnected-padding = 1
 
@@ -309,11 +309,11 @@ time-alt = "%H:%M"
 format = <label>
 format-prefix = %{T5}%{T-}
 format-prefix-background = ${colors.orange}
-format-prefix-foreground = ${colors.bg}
+format-prefix-foreground = ${colors.black}
 format-underline = ${colors.orange}
 format-prefix-padding = 1
 label = %{T1}%time%%{T-}
-label-background = ${colors.bg}
+label-background = ${colors.black}
 label-foreground = ${colors.fg}
 label-padding = 1
 
@@ -324,10 +324,10 @@ use-ui-max = false
 format-volume = <label-volume>
 format-volume-prefix = %{T5}%{T-}
 format-volume-prefix-background = ${colors.yellow}
-format-volume-prefix-foreground = ${colors.bg}
+format-volume-prefix-foreground = ${colors.black}
 format-volume-prefix-padding = 1
 label-volume = %{T1}%percentage%%%{T-}
-label-volume-background = ${colors.bg}
+label-volume-background = ${colors.black}
 label-volume-foreground = ${colors.fg}
 label-volume-underline = ${colors.yellow}
 label-volume-padding = 1
@@ -335,10 +335,10 @@ label-volume-padding = 1
 format-muted = <label-muted>
 format-muted-prefix = %{T5}%{T-}
 format-muted-prefix-background = ${colors.orange}
-format-muted-prefix-foreground = ${colors.bg}
+format-muted-prefix-foreground = ${colors.black}
 format-muted-prefix-padding = 1
 label-muted = %{T1}%percentage%%%{T-}
-label-muted-background = ${colors.bg}
+label-muted-background = ${colors.black}
 label-muted-foreground = ${colors.fg}
 label-muted-padding = 1
 
@@ -352,23 +352,23 @@ warn-temperature = 60
 format = <label>
 format-prefix = %{T5}%{T-}
 format-prefix-background = ${colors.purple}
-format-prefix-foreground = ${colors.bg}
+format-prefix-foreground = ${colors.black}
 format-underline = ${colors.purple}
 format-prefix-padding = 1
 
 format-warn = <label-warn>
 format-warn-prefix = %{T5}%{T-}
 format-warn-prefix-background = ${colors.red}
-format-warn-prefix-foreground = ${colors.bg}
+format-warn-prefix-foreground = ${colors.black}
 format-warn-prefix-padding = 1
 
 label = %{T1}%temperature-c%%{T-}
-label-background = ${colors.bg}
+label-background = ${colors.black}
 label-foreground = ${colors.fg}
 label-padding = 1
 
 label-warn = %{T1}%temperature-c%%{T-}
-label-warn-background = ${colors.bg}
+label-warn-background = ${colors.black}
 label-warn-foreground = ${colors.fg}
 label-warn-padding = 1
 
@@ -379,17 +379,17 @@ expand-right = true
 
 content = %{T10}%{T-}
 content-background = ${colors.red}
-content-foreground = ${colors.bg}
+content-foreground = ${colors.black}
 content-padding = 1
 
 format-spacing = 1
 
 label-open = %{T10}%{T-}
-label-open-foreground = ${colors.bg}
+label-open-foreground = ${colors.black}
 label-open-background = ${colors.red}
 label-open-padding = 1
 label-close =  Close
-label-close-foreground = ${colors.bg}
+label-close-foreground = ${colors.black}
 label-close-background = ${colors.red}
 label-close-padding = 1
 label-separator = |
