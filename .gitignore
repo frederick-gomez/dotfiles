@@ -4,6 +4,7 @@ Code/
 ibus/
 pulse/
 gh/
+dconf/
 *.list
 *.dirs
 *.locale
