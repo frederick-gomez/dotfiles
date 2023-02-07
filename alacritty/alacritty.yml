@@ -33,7 +33,6 @@ live_config_reload: true
 #Keybindigs
 key_bindings:
   - { key: V, mods: Control, action: Paste }
-  - { key: C, mods: Control, action: Copy }
 
 font:
   normal:

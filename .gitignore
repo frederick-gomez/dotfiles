@@ -5,6 +5,7 @@ ibus/
 pulse/
 gh/
 dconf/
+dlv/
 *.list
 *.dirs
 *.locale
