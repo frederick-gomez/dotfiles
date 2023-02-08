@@ -4,8 +4,8 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed({
-  'sumneko_lua',
-  'golangci_lint_ls',
+    'sumneko_lua',
+    'golangci_lint_ls',
 })
 
 -- Fix Undefined global 'vim'
