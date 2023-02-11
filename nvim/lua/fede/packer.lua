@@ -11,19 +11,35 @@ return require('packer').startup(function(use)
     }
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use 'nvim-treesitter/nvim-treesitter-context'
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('rcarriga/nvim-notify')
+    use('norcalli/nvim-colorizer.lua')
+    use('jose-elias-alvarez/null-ls.nvim')
+    use('MunifTanjim/prettier.nvim')
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+    use {'lewis6991/gitsigns.nvim'}
+    --Useless
+    use("eandrju/cellular-automaton.nvim")
 
-    --  Themes
-    use('navarasu/onedark.nvim')
-    use('rose-pine/neovim')
-    use('folke/tokyonight.nvim')
+
+
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
 
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+
+    --  Themes
+    use('navarasu/onedark.nvim')
+    use ("catppuccin/nvim")
+    --use('rose-pine/neovim')
+    --use('folke/tokyonight.nvim')
 
     use {
         'VonHeikemen/lsp-zero.nvim',
