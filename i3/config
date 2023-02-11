@@ -51,7 +51,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # start program launcher
-#bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+Shift+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec --no-startup-id "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
@@ -157,7 +157,7 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 
   bindsym r exec systemctl reboot
 
-  bindsym s exec systemctl shutdown
+  bindsym s exec systemctl poweroff
 
   bindsym Escape mode "default"
 
@@ -184,6 +184,11 @@ exec --no-startup-id nitrogen --restore
 
 #change keyboard layout
 exec_always --no-startup-id "setxkbmap latam -model pc105"
+
+## Screenshots
+bindsym Print exec --no-startup-id maim --format=jpg "/home/$USER/Pictures/Screenshots/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/Screenshots/$(date)"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
