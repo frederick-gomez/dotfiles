@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('rcarriga/nvim-notify')
     use('norcalli/nvim-colorizer.lua')
-    use('jose-elias-alvarez/null-ls.nvim')
+    use({'jose-elias-alvarez/null-ls.nvim', requires = { "nvim-lua/plenary.nvim" } })
     use('MunifTanjim/prettier.nvim')
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     use {'lewis6991/gitsigns.nvim'}
